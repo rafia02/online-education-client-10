@@ -39,7 +39,6 @@ const Header = () => {
             <Link className="btn btn-ghost normal-case text-xl">It education</Link>
 
 
-
             <label className="swap swap-rotate">
   
             
