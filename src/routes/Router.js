@@ -15,13 +15,13 @@ import PrivetRoute from "./PrivetRoute";
 export const router = createBrowserRouter([
     {path: '/', errorElement: <ErrorPage></ErrorPage> , element: <Main></Main>, children: [
         {path: '/', element: <Home></Home>},
-        {path: '/courses', loader: ()=>fetch('http://localhost:5000/courses') , element: <Courses></Courses> },
+        {path: '/courses', loader: ()=>fetch('https://online-educatin-server.vercel.app/courses') , element: <Courses></Courses> },
         {path: '/register', element: <Register></Register>},
         {path: "/blog", element: <Blog></Blog>},
         {path: 'faq' , element: <FaqPage></FaqPage> },
         {path: 'login',   element: <Login></Login>},
-        {path: 'courses/:id', loader: ({params})=> fetch(`http://localhost:5000/courses/${params.id}`), element: <CourseDetails></CourseDetails>},
-        {path: '/checkout/:id',  loader: ({params})=> fetch(`http://localhost:5000/courses/${params.id}`), element: <PrivetRoute><Checkout></Checkout></PrivetRoute>}
+        {path: 'courses/:id', loader: ({params})=> fetch(`https://online-educatin-server.vercel.app/courses/${params.id}`), element: <CourseDetails></CourseDetails>},
+        {path: '/checkout/:id',  loader: ({params})=> fetch(`https://online-educatin-server.vercel.app/courses/${params.id}`), element: <PrivetRoute><Checkout></Checkout></PrivetRoute>}
         
     ]}
 ])
