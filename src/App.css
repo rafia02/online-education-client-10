@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.header-contant{
+ background-image: url(https://teaching.washington.edu/wp-content/uploads/sites/3/import/cropped-cropped-cropped-UW-RedSquare_2.jpg);
+ height: 400px;
+ background-repeat: no-repeat;
+}
+
+
